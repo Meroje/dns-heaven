@@ -55,7 +55,7 @@ func ParseScutilDns(data string) (*DnsInfo, error) {
 				continue
 			}
 
-			parts := strings.SplitN(l, ":", 2)
+			parts := strings.SplitN(l, " : ", 2)
 
 			if len(parts) != 2 {
 				continue
